@@ -7,20 +7,12 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
-
-@Document(collection = "movies")
+@Document(collection = "reviews")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class movie {
+public class Review {
     @Id
     private ObjectId id;
-    private String imdbid;
-    private String title;
-    private String releaseDate;
-    private String trailerLink;
-    private String poster;
-    private List<String> generes;
-    private List<String> brackdrops;
+    private String body;
 }
