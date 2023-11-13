@@ -26,5 +26,5 @@ public class Movie {
     private List<String> brackdrops;
 
     @DocumentReference
-    private List<String> reviewIds;
+    private List<Review> reviewIds;
 }
